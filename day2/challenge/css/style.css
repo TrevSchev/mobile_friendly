@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: purple;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 50px;
+}
+
+@media(max-width: 1024px) {
+    header{
+        background-color: blue;
+    }
+}
+
+@media(max-width: 768px) {
+    header{
+        background-color: green;
+    }
+}
+
+@media(max-width: 500px) {
+   header{
+    background-color: red;
+}
+   }
