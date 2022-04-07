@@ -1,0 +1,58 @@
+.top_row img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.top_row .card {
+    width: 30%;
+    margin: 1%;
+}
+
+.card {
+    display: inline-block;
+
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.bottom_row .card {
+    width: 47%;
+    margin: 1%;
+}
+
+.bottom_row img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+@media (max-width: 575px) {
+    .top_row .card {
+        width: 100%;
+    }
+    .bottom_row .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .top_row .card {
+        width: 18%;
+    }
+    .bottom_row .card {
+        width: 18%;
+    }
+}
+
+.top_row, .bottom_row {
+    display: contents;
+}
