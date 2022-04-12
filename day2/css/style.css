@@ -56,3 +56,39 @@ p {
 .top_row, .bottom_row {
     display: contents;
 }
+
+
+/* Flex */
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(187, 198, 248);
+    height: 600px;
+    /* align-items: center; */
+    justify-content: center;
+    ;
+    /* flex-direction: column; */
+}
+
+.box {
+    border: 2px solid rgb(206, 86, 86);
+    height: 100px;
+    box-sizing: border-box;
+    min-width: 100px;
+    /* max-width: 200px; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-child(odd) {
+    background-color: aquamarine;
+    align-self: flex-end;
+}
+
+/* everything else is 0 because it is not target so 1 goes to the end */
+.box:nth-of-type(1) {
+    order: 3;
+}
